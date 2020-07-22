@@ -6,6 +6,7 @@ const requestApi = async () => {
     const res = await req.json();
     const target = document.getElementById("result");
 
+
     res.data.data.forEach((tours) => {
       target.innerHTML = `
             <div class="card">
